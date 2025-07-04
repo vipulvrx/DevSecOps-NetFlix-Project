@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vrxnetflix-app
+  name: netflix-app
   labels:
-    app: vrxnetflix-app
+    app: netflix-app
 spec:
   type: NodePort
   ports:
@@ -11,4 +11,4 @@ spec:
     targetPort: 80
     nodePort: 30007
   selector:
-    app: vrxnetflix-app
+    app: netflix-app
