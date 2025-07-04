@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vrxnetflix-app
+  name: netflix-app
   labels:
-    app: vrxnetflix-app
+    app: netflix-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: vrxnetflix-app
+      app: netflix-app
   template:
     metadata:
       labels:
-        app: vrxnetflix-app
+        app: netflix-app
     spec:
       containers:
-      - name: vrxnetflix-app
+      - name: netflix-app
         image: vipulvrx/netflix:latest
         ports:
         - containerPort: 80
