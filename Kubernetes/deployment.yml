@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: VRXnetflix-app
-        image: nasi101/netflix:latest
+        image: vipulvrx/netflix:latest
         ports:
         - containerPort: 80
